@@ -1,0 +1,51 @@
+# BME VIK Thesis Template
+
+A Typst template for BSc and MSc theses at the Faculty of Electrical Engineering and Informatics (VIK), Budapest University of Technology and Economics (BME).
+
+The template aims to provide a convenient starting point that follows the faculty's formatting requirements while taking advantage of Typst's modern typesetting features.
+
+## Features
+
+- BSc and MSc thesis support
+- Hungarian and English documents
+- Automatic chapter, figure, table, equation, and appendix numbering
+- Bibliography and citations
+- Theorem-like environments
+- List of figures and tables
+- Hungarian-aware references
+- Generative AI usage declaration
+- Support for single- and double-sided layouts
+
+## Usage
+
+Create a new project from the template:
+
+```bash
+typst init @preview/bme-vik-thesis-template:1.0.0
+```
+
+Compile the document with:
+
+```bash
+typst compile thesis.typ
+```
+
+or automatically recompile it when the source changes:
+
+```bash
+typst watch thesis.typ
+```
+
+The included example document demonstrates the available features and serves as a more detailed guide to using the template.
+
+## Requirements
+
+A recent version of Typst is required. The template can be used either with the Typst web application or with a local Typst installation.
+
+## Disclaimer
+
+This is an unofficial template. Always check the current requirements of BME VIK and your department before submitting your thesis.
+
+## License
+
+The template source code is licensed under the MIT License. University names, logos, and official texts included or referenced by the template may be subject to their respective owners' terms and are not necessarily covered by this license.

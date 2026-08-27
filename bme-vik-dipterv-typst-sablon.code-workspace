@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"cSpell.enabled": false,
+		"cSpell.language": "en, hu",
+		"cSpell.words": [
+			"Typst"
+		]
+	}
+}
