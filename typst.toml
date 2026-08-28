@@ -27,7 +27,7 @@ keywords = [
     "thesis",
 ]
 categories = ["thesis"]
-compiler = "0.14.0"
+compiler = "0.15.0"
 exclude = ["template/main.pdf"]
 
 [template]
