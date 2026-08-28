@@ -1,4 +1,4 @@
-#import "@preview/bme-vik-thesis-template:1.0.0": *
+#import "@preview/bme-vik-thesis:1.0.0": *
 #import "@preview/colorful-boxes:1.4.3": colorbox
 
 #import "helpers/huorion.typ": *

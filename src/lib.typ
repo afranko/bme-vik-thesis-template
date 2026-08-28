@@ -1,5 +1,5 @@
-#import "aref.typ": *
-#import "internal.typ": *
+#import "aref.typ": _make-aref
+#import "internal.typ": _front-back-heading, _main-heading, _make-equation, _make-figure-numbering, _reset-counters
 #import "@preview/theorion:0.6.0": *
 
 #let doc-lang = state("lang", "hu")
@@ -40,9 +40,10 @@
   title: "",
   body
 ) = {
-  import "declaration.typ": *
+  import "declaration.typ": declaration
+  import "internal.typ": *
   import "libs.typ": *
-  import "titlepage.typ": *
+  import "titlepage.typ": titlepage
 
   // PREPROCESSING
   if lang == none {panic("Language is not set!")}
