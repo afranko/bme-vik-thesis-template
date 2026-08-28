@@ -1,5 +1,5 @@
 [package]
-name = "bme-vik-thesis-template"
+name = "bme-vik-thesis"
 version = "1.0.0"
 entrypoint = "src/lib.typ"
 authors = [
