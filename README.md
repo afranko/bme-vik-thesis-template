@@ -2,7 +2,7 @@
 
 A Typst template for BSc and MSc theses at the Faculty of Electrical Engineering and Informatics (VIK), Budapest University of Technology and Economics (BME).
 
-The template aims to provide a convenient starting point that follows the faculty's formatting requirements while taking advantage of Typst's modern typesetting features.
+The template aims to provide a convenient starting point that follows the faculty's formatting requirements while taking advantage of Typst's modern typesetting features. The skeleton of this work is based on the original LaTeX template.
 
 ## Features
 
