@@ -38,6 +38,84 @@ typst watch thesis.typ
 
 The included example document demonstrates the available features and serves as a more detailed guide to using the template.
 
+### Example
+
+Here's how to use the template:
+
+```typst
+#import "@preview/bme-vik-thesis:1.0.0": *
+
+#let lang = "hu"  // LANGUAGE OF THE DOCUMENT
+
+#show: thesis.with(
+  authors: ("Gipsz Jakab"),
+  lang: lang,
+  supervisors: ("Dr. Első konzulens", "Második konzulens"),
+  title: "Elektronikus Terelők"
+)
+
+#show: front-matter
+#include "content/abstract.typ"
+
+#show: main-matter
+
+#include "content/<your-content>.typ"
+
+#show: back-matter
+
+#include "content/acknowledgement.typ"
+
+#bibliography("bibliography/bib.bib")
+
+#show: appendix
+#include "content/appendices.typ"
+
+#show: genai-declaration.with(true)
+#let gen-ai-names = gen-ai-names_all.at(lang) // To be adjusted to the language
+
+#{
+    show table.cell: set text(size: 10pt)
+
+    table(
+    columns: (1.3fr, 1fr, 1fr, 1fr),
+    stroke: 0.5pt,
+    align: horizon,
+    table.header(
+      gen-ai-names.titles.types, gen-ai-names.titles.names, gen-ai-names.titles.sections, gen-ai-names.titles.usage
+    ),
+    gen-ai-names.literature, [], [], [],
+    ..gen-ai-prompt(),
+
+    gen-ai-names.codegen, [], [], [],
+    ..gen-ai-prompt(),
+
+    gen-ai-names.ideas, [], [], [],
+    ..gen-ai-prompt(),
+
+    gen-ai-names.outline, [], [], [],
+    ..gen-ai-prompt(),
+
+    gen-ai-names.textblocks, [], [], [],
+    ..gen-ai-prompt(),
+
+    gen-ai-names.figures, [], [], [],
+    ..gen-ai-prompt(),
+
+    gen-ai-names.plots, [], [], [],
+    ..gen-ai-prompt(),
+
+    gen-ai-names.presentation, [], [], [],
+    ..gen-ai-prompt(),
+
+    gen-ai-names.others, [], [], [],
+    ..gen-ai-prompt(),
+
+    ..gen-ai-all-percentage(),
+    gen-ai-all-text()
+  )
+}
+```
+
 ## Requirements
 
 A recent version of Typst is required. The template can be used either with the Typst web application or with a local Typst installation.
