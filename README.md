@@ -71,7 +71,7 @@ Here's how to use the template:
 #include "content/appendices.typ"
 
 #show: genai-declaration.with(true)
-#let gen-ai-names = gen-ai-names_all.at(lang) // To be adjusted to the language
+#let gen-ai-names = gen-ai-names-all.at(lang) // To be adjusted to the language
 
 #{
     show table.cell: set text(size: 10pt)

@@ -524,7 +524,7 @@ let lang-consts = consts.at(lang)
 }
 
 /// Localized strings used by the generative AI declaration table.
-#let gen-ai-names_all = (
+#let gen-ai-names-all = (
   hu: (
     literature: "Irodalomkutatás",
     codegen: "Programkód generálása",
