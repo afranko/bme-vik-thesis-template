@@ -43,7 +43,7 @@ The included example document demonstrates the available features and serves as 
 Here's how to use the template:
 
 ```typst
-#import "@preview/bme-vik-thesis:1.0.0": *
+#import "@preview/bme-vik-azslab-thesis:1.0.0": *
 
 #let lang = "hu"  // LANGUAGE OF THE DOCUMENT
 

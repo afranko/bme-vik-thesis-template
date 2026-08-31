@@ -1,4 +1,4 @@
-#import "@preview/bme-vik-thesis:1.0.0": *
+#import "@preview/bme-vik-azslab-thesis:1.0.0": *
 #import "@preview/colorful-boxes:1.4.3": colorbox
 
 #import "helpers/huorion.typ": *
@@ -25,12 +25,8 @@ Ebben a fejezetben bemutatásra kerül a sablon használata. Itt kifejezetten cs
 A sablont az online felületen a _“Start from template”_ gomb megnyomásával lehet elkezdeni használni. Amennyiben lokálisan kívánjuk használni, úgy a parancssorból a
 
 ```bash
-typst init @preview/bme-vik-thesis-template
-``` parancs kiadásával lehet létrehozni a mappát, benne a szükséges sablon fájlokkal, továbbá ezzel a példadokumentummal. Ezen felül akár a _Github_ repository klónozásával is hozzá lehet jutni a sablonhoz és a példadokumentumhoz, például HTTP-n:
-
-```git
-git clone https://github.com/afranko/bme-vik-thesis-template.git
-```
+typst init @preview/bme-vik-azslab-thesis
+``` parancs kiadásával lehet létrehozni a mappát, benne a szükséges sablon fájlokkal, továbbá ezzel a példadokumentummal.
 
 // ----------------------------------------------------------------------------
 == Címkék és hivatkozások
